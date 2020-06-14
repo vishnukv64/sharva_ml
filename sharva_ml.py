@@ -13,7 +13,7 @@ import time
 import dlib
 import cv2
 import pandas as pd
-# from deepface import DeepFace
+from deepface import DeepFace
 import os
 import speech_recognition as sr
 from textblob import TextBlob
@@ -223,7 +223,7 @@ if __name__ == '__main__':
 	# os.system(command2mp3)
 	os.system(command2wav)
 
-	# eye_counter(video_file)
+	eye_counter(video_file)
 
 	# video_to_audio_conversion(audio_clip)
 	video_to_audio_conversion("{}.wav".format(name_file))
